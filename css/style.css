@@ -20138,6 +20138,14 @@ input:active, input:focus, button:active, button:focus {
   @media screen and (max-width: 1200px) {
     .grid figure {
       min-width: 220px; } }
+  @media screen and (max-width: 991px) {
+    .grid figure {
+      min-width: 330px;
+      max-width: initial;
+      max-height: initial;
+      margin: 0 auto;
+      float: none;
+      margin-bottom: 16px; } }
   @media screen and (max-width: 767px) {
     .grid figure {
       min-width: 300px;
