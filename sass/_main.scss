@@ -120,4 +120,29 @@
             }
         }
     }
+
+    .services {
+        padding: 50px 0;
+
+        h1 {
+            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 70px;
+            font-weight: 900;
+            text-align: left;
+            color: $white;
+            margin-bottom: 24px;
+
+            @media screen and (max-width: 1440px) {
+                font-size: 50px;
+            }
+
+            @media screen and (max-width: 1200px) {
+                font-size: 40px;
+            }
+
+            @media screen and (max-width: 991px) {
+                font-size: 30px;
+            }
+        }
+    }
 }
