@@ -20528,6 +20528,10 @@ figure.effect-goliath:hover p {
       font-size: 18px;
       color: #FFFFFF;
       line-height: 1.4; }
+    .main .blog .divider {
+      border: none;
+      height: 8px;
+      margin: 0; }
     .main .blog img {
       max-width: 100%; }
     .main .blog .post {
