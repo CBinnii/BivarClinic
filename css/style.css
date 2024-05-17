@@ -49,6 +49,9 @@
 .league-spartan {
   font-family: 'League Spartan', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
+.montserrat {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
 .maldina {
   font-family: 'maldina_scriptregular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
@@ -20426,17 +20429,14 @@ figure.effect-goliath:hover p {
     padding: 50px 0; }
     .main .about h1, .main .about .h1 {
       font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-size: 70px;
+      font-size: 90px;
       font-weight: 900;
       text-align: left;
       color: #FFFFFF;
       margin-bottom: 24px; }
-      @media screen and (max-width: 1440px) {
-        .main .about h1, .main .about .h1 {
-          font-size: 50px; } }
       @media screen and (max-width: 1200px) {
         .main .about h1, .main .about .h1 {
-          font-size: 40px; } }
+          font-size: 50px; } }
       @media screen and (max-width: 991px) {
         .main .about h1, .main .about .h1 {
           font-size: 30px; } }
@@ -20475,20 +20475,90 @@ figure.effect-goliath:hover p {
     padding: 50px 0; }
     .main .services h1, .main .services .h1 {
       font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-size: 70px;
+      font-size: 90px;
       font-weight: 900;
       text-align: left;
       color: #FFFFFF;
       margin-bottom: 24px; }
-      @media screen and (max-width: 1440px) {
-        .main .services h1, .main .services .h1 {
-          font-size: 50px; } }
       @media screen and (max-width: 1200px) {
         .main .services h1, .main .services .h1 {
-          font-size: 40px; } }
+          font-size: 50px; } }
       @media screen and (max-width: 991px) {
         .main .services h1, .main .services .h1 {
           font-size: 30px; } }
+  .main .clinic-case {
+    padding: 50px 0; }
+    .main .clinic-case h1, .main .clinic-case .h1 {
+      font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 90px;
+      font-weight: 900;
+      text-align: left;
+      color: #FFFFFF;
+      margin-bottom: 24px; }
+      @media screen and (max-width: 1200px) {
+        .main .clinic-case h1, .main .clinic-case .h1 {
+          font-size: 50px; } }
+      @media screen and (max-width: 991px) {
+        .main .clinic-case h1, .main .clinic-case .h1 {
+          font-size: 30px; } }
+    .main .clinic-case p {
+      font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 18px;
+      color: #FFFFFF;
+      line-height: 1.4; }
+    .main .clinic-case img {
+      max-width: 100%; }
+  .main .blog {
+    padding: 50px 0; }
+    .main .blog h1, .main .blog .h1 {
+      font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 90px;
+      font-weight: 900;
+      text-align: left;
+      color: #FFFFFF;
+      margin-bottom: 24px; }
+      @media screen and (max-width: 1200px) {
+        .main .blog h1, .main .blog .h1 {
+          font-size: 50px; } }
+      @media screen and (max-width: 991px) {
+        .main .blog h1, .main .blog .h1 {
+          font-size: 30px; } }
+    .main .blog p {
+      font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 18px;
+      color: #FFFFFF;
+      line-height: 1.4; }
+    .main .blog img {
+      max-width: 100%; }
+    .main .blog .post {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 500px;
+      padding: 2px; }
+      .main .blog .post .img {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative; }
+        .main .blog .post .img p {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.47);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          text-align: center;
+          padding: 24px;
+          line-height: 1.4;
+          color: #FFFFFF;
+          font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-weight: 700; }
 
 .button {
   display: flex;

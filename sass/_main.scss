@@ -53,18 +53,14 @@
 
         h1 {
             font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 70px;
+            font-size: 90px;
             font-weight: 900;
             text-align: left;
             color: $white;
             margin-bottom: 24px;
 
-            @media screen and (max-width: 1440px) {
-                font-size: 50px;
-            }
-
             @media screen and (max-width: 1200px) {
-                font-size: 40px;
+                font-size: 50px;
             }
 
             @media screen and (max-width: 991px) {
@@ -126,22 +122,118 @@
 
         h1 {
             font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 70px;
+            font-size: 90px;
             font-weight: 900;
             text-align: left;
             color: $white;
             margin-bottom: 24px;
 
-            @media screen and (max-width: 1440px) {
-                font-size: 50px;
-            }
-
             @media screen and (max-width: 1200px) {
-                font-size: 40px;
+                font-size: 50px;
             }
 
             @media screen and (max-width: 991px) {
                 font-size: 30px;
+            }
+        }
+    }
+
+    .clinic-case {
+        padding: 50px 0;
+
+        h1 {
+            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            text-align: left;
+            color: $white;
+            margin-bottom: 24px;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 50px;
+            }
+
+            @media screen and (max-width: 991px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            color: #FFFFFF;
+            line-height: 1.4;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .blog {
+        padding: 50px 0;
+
+        h1 {
+            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            text-align: left;
+            color: $white;
+            margin-bottom: 24px;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 50px;
+            }
+
+            @media screen and (max-width: 991px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            color: #FFFFFF;
+            line-height: 1.4;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .post {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            padding: 2px;
+
+            .img {
+                height: 100%;
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+
+                p {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.47);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    font-size: 18px;
+                    text-align: center;
+                    padding: 24px;
+                    line-height: 1.4;
+                    color: #FFFFFF;
+                    font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-weight: 700;
+                }
             }
         }
     }

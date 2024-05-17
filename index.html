@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="pt">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,8 +10,88 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 	<script src="js/bootstrap.bundle.min.js"></script>
+
+	<!-- Demo styles -->
+	<style>
+		.swiper {
+			width: 100%;
+			height: 500px;
+		}
+
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+		}
+
+		.swiper-slide .about-slider {
+			position: absolute;
+			bottom: 35px;
+			right: 0;
+
+			display: flex;
+			align-items: center;
+			width: 100%;
+			justify-content: flex-end;
+		}
+
+		.swiper-slide .about-slider p {
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+			font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.4;
+		}
+
+		.swiper-slide .about-slider img {
+			width: 65px;
+			transform: rotate(270deg);
+			/* margin-top: 10px; */
+		}
+
+		.swiper-slide img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.swiper-pagination {
+			position: inherit;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.swiper-pagination-bullet {
+			width: 100%;
+			height: auto;
+			border-radius: 0;
+			text-align: left;
+			line-height: 20px;
+			font-size: 12px;
+			color: #FFFFFF;
+			opacity: 1;
+			background: transparent;
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            color: #FFFFFF;
+            line-height: 1.4;
+		}
+
+		.swiper-pagination-bullet-active {
+			color: #fff;
+			background: transparent;
+		}
+	</style>
 </head>
 
 <body>
@@ -22,7 +102,9 @@
 					<a class="navbar-brand" href="#">
 						<img src="./images/logo.png" alt="Logo Bívar Clinic">
 					</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
 						<div class="menu-button" id="menu-button" onclick="menuMobile()">
 							<div class="bar"></div>
 							<div class="bar"></div>
@@ -56,7 +138,7 @@
 	<section class="main">
 		<div class="slider">
 			<div class="banner">
-				<h1>Onde a beleza encontra <br/>a excelência médica.</h1>
+				<h1>Onde a beleza encontra <br />a excelência médica.</h1>
 			</div>
 		</div>
 
@@ -73,9 +155,18 @@
 					</div>
 					<div class="col-sm-8 col-lg-9 right">
 						<p>Bem-vindo à Bívar Clinic, onde a excelência médica se alia à arte da cirurgia plástica.</p>
-						<p>Fundada e liderada pelo Dr. Eduardo Matos, cirurgião plástico de renome internacional, a nossa clínica orgulha-se de oferecer uma equipa multidisciplinar especializada em diversas áreas da cirurgia plástica e estética.</p>
-						<p>Para além do Dr. Eduardo Matos, especialista em Cirurgia Plástica Reconstrutiva e Estética e Cirurgia Plástica Pós-Perda de Peso, contamos com uma equipa de profissionais altamente qualificados e especializados em Medicina Estética e Dermatologia. Todos os membros da nossa equipa partilham a mesma paixão pela excelência médica e pelo bem-estar dos nossos pacientes.</p>
-						<p>Na Bívar Clinic, a nossa missão é oferecer um ambiente acolhedor e seguro, onde os pacientes possam confiar em receber tratamentos personalizados e cuidados de excelência. Estamos empenhados em ajudá-lo a alcançar os seus objetivos estéticos e a recuperar a sua confiança e autoestima.</p>
+						<p>Fundada e liderada pelo Dr. Eduardo Matos, cirurgião plástico de renome internacional, a
+							nossa clínica orgulha-se de oferecer uma equipa multidisciplinar especializada em diversas
+							áreas da cirurgia plástica e estética.</p>
+						<p>Para além do Dr. Eduardo Matos, especialista em Cirurgia Plástica Reconstrutiva e Estética e
+							Cirurgia Plástica Pós-Perda de Peso, contamos com uma equipa de profissionais altamente
+							qualificados e especializados em Medicina Estética e Dermatologia. Todos os membros da nossa
+							equipa partilham a mesma paixão pela excelência médica e pelo bem-estar dos nossos
+							pacientes.</p>
+						<p>Na Bívar Clinic, a nossa missão é oferecer um ambiente acolhedor e seguro, onde os pacientes
+							possam confiar em receber tratamentos personalizados e cuidados de excelência. Estamos
+							empenhados em ajudá-lo a alcançar os seus objetivos estéticos e a recuperar a sua confiança
+							e autoestima.</p>
 					</div>
 				</div>
 			</div>
@@ -89,39 +180,193 @@
 					<div class="row m-0">
 						<div class="col-md-6 col-lg-3 p-0">
 							<figure class="effect-goliath">
-								<img src="images/service-1.jpg" alt="Serviço 1"/>
+								<img src="images/service-1.jpg" alt="Serviço 1" />
 								<figcaption>
 									<p>Cirurgia Plástica Reconstrutiva e Estética</p>
 									<a href="#">View more</a>
-								</figcaption>			
+								</figcaption>
 							</figure>
 						</div>
 						<div class="col-md-6 col-lg-3 p-0">
 							<figure class="effect-goliath">
-								<img src="images/service-2.jpg" alt="Serviço 2"/>
+								<img src="images/service-2.jpg" alt="Serviço 2" />
 								<figcaption>
 									<p>Cirurgia Plástica Pós-Perda de Peso</p>
 									<a href="#">View more</a>
-								</figcaption>			
+								</figcaption>
 							</figure>
 						</div>
 						<div class="col-md-6 col-lg-3 p-0">
 							<figure class="effect-goliath">
-								<img src="images/service-3.jpg" alt="Serviço 3"/>
+								<img src="images/service-3.jpg" alt="Serviço 3" />
 								<figcaption>
 									<p>Medicina estética</p>
 									<a href="#">View more</a>
-								</figcaption>			
+								</figcaption>
 							</figure>
 						</div>
 						<div class="col-md-6 col-lg-3 p-0">
 							<figure class="effect-goliath">
-								<img src="images/service-4.jpg" alt="Serviço 4"/>
+								<img src="images/service-4.jpg" alt="Serviço 4" />
 								<figcaption>
 									<p>Dermatologia</p>
 									<a href="#">View more</a>
-								</figcaption>			
+								</figcaption>
 							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="clinic-case">
+			<div class="container">
+				<h1>Casos clínicos</h1>
+
+				<div class="cases">
+				</div>
+
+				<div class="row">
+					<div class="col-sm-4 col-lg-3 left">
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="col-sm-8 col-lg-9 right">
+						<div class="swiper mySwiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>MAMOPLASTIA DE REDUÇÃO</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>MAMOPLASTIA DE AUMENTO</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>MASTOPEXIA SEM PROTÉSES</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>MASTOPEXIA COM PRÓTESES</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>LIPOBODYLIFT</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>LIPOABDOMINOPLASTIA 360 HD</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>BRAQUIPLASTIA</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>LIPOASPIRAÇÃO E LIPO ESCULTURA</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>MOMMY MAKEOVER</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>RINOPLASTIA</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>BLEFAROPLASTIA</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>FENDA LABIAL</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>TOXINA BOTULINICA</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>PREENCHIMENTOS</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<img src="./images/clinic-case.png" alt="Imagem com 2 pessoas conversando">
+									<div class="about-slider">
+										<p>PEELING FACIAL</p>
+										<img src="./images/arrow.svg" alt="Arrow">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="blog">
+			<div class="container">
+				<h1>Blog</h1>
+
+				<div class="row">
+					<div class="col-sm-4 post">
+						<div class="img" style="background-image: url('./images/blog-1.png');">
+							<p>Lipoabdominoplastia: Uma Abordagem Moderna Para Contorno Corporal</p>
+						</div>
+					</div>
+					<div class="col-sm-4 post">
+						<div class="img" style="background-image: url('./images/blog-2.png');">
+							<p>Cirurgia Pós Bariátrica – Contorno Corporal Pós Perda De Peso</p>
+						</div>
+
+						<div class="img" style="background-image: url('./images/blog-3.png');">
+							<p>Reconstrução Mamária</p>
+						</div>
+					</div>
+					<div class="col-sm-4 post">
+						<div class="img" style="background-image: url('./images/blog-4.png');">
+							<p>Lipobodylift</p>
 						</div>
 					</div>
 				</div>
@@ -132,8 +377,8 @@
 	<footer class="footer">
 		<div class="container">
 			<img src="images/logo.png" alt="Logo Bívar Clinic">
-			
-			<p>© 2023 All Rights Reserved.</p>
+
+			<p>© 2024 All Rights Reserved.</p>
 		</div>
 	</footer>
 
@@ -141,6 +386,21 @@
 	<script src="js/swiper-bundle.min.js"></script>
 	<!-- App JS -->
 	<script src="js/app.js"></script>
+
+
+	<!-- Initialize Swiper -->
+	<script>
+		var menu = ['MAMOPLASTIA DE REDUÇÃO', 'MAMOPLASTIA DE AUMENTO', 'MASTOPEXIA SEM PROTÉSES', 'MASTOPEXIA COM PRÓTESES', 'LIPOBODYLIFT', 'LIPOABDOMINOPLASTIA 360 HD', 'BRAQUIPLASTIA', 'LIPOASPIRAÇÃO E LIPO ESCULTURA', 'MOMMY MAKEOVER', 'RINOPLASTIA', 'BLEFAROPLASTIA', 'FENDA LABIAL', 'TOXINA BOTULINICA', 'PREENCHIMENTOS', 'PEELING FACIAL']
+		var swiper = new Swiper(".mySwiper", {
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<span class="' + className + '">' + ((menu[index])) + "</span>";
+				},
+			},
+		});
+	</script>
 </body>
 
 </html>
