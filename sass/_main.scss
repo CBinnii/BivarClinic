@@ -23,10 +23,10 @@
             align-items: flex-end;
             padding-bottom: 140px;
 
-			@media screen and (max-width: 991px) {
+            @media screen and (max-width: 991px) {
                 height: 430px;
                 padding-bottom: 60px;
-			}
+            }
 
             @media screen and (max-width: 540px) {
                 height: 230px;
@@ -60,11 +60,11 @@
             margin-bottom: 24px;
 
             @media screen and (max-width: 1200px) {
-                font-size: 50px;
+                font-size: 70px;
             }
 
             @media screen and (max-width: 991px) {
-                font-size: 30px;
+                font-size: 40px;
             }
         }
 
@@ -129,11 +129,11 @@
             margin-bottom: 24px;
 
             @media screen and (max-width: 1200px) {
-                font-size: 50px;
+                font-size: 70px;
             }
 
             @media screen and (max-width: 991px) {
-                font-size: 30px;
+                font-size: 40px;
             }
         }
     }
@@ -150,11 +150,11 @@
             margin-bottom: 24px;
 
             @media screen and (max-width: 1200px) {
-                font-size: 50px;
+                font-size: 70px;
             }
 
             @media screen and (max-width: 991px) {
-                font-size: 30px;
+                font-size: 40px;
             }
         }
 
@@ -167,6 +167,82 @@
 
         img {
             max-width: 100%;
+        }
+
+
+        .swiper {
+            width: 100%;
+            height: 500px;
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                .about-slider {
+                    position: absolute;
+                    bottom: 35px;
+                    right: 0;
+        
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    justify-content: flex-end;
+
+                    p {
+                        font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #FFFFFF;
+                        line-height: 1.4;
+                    }
+                    
+                    img {
+                        width: 65px;
+                        transform: rotate(270deg);
+                    }
+                }
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .swiper-pagination {
+            position: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .swiper-pagination-bullet {
+                width: 100%;
+                height: auto;
+                border-radius: 0;
+                text-align: left;
+                line-height: 20px;
+                font-size: 12px;
+                color: #FFFFFF;
+                opacity: 1;
+                background: transparent;
+                font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 18px;
+                color: #FFFFFF;
+                line-height: 1.4;
+            }
+
+            .swiper-pagination-bullet-active {
+                color: #fff;
+                font-weight: 900;
+                background: transparent;
+            }
         }
     }
 
@@ -182,11 +258,11 @@
             margin-bottom: 24px;
 
             @media screen and (max-width: 1200px) {
-                font-size: 50px;
+                font-size: 70px;
             }
 
             @media screen and (max-width: 991px) {
-                font-size: 30px;
+                font-size: 40px;
             }
         }
 
@@ -222,23 +298,150 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 position: relative;
+                overflow: hidden;
 
-                p {
+                a {
+                    text-decoration: none;
+                }
+
+                .overlay {
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                    background-color: rgba(0, 0, 0, 0.47);
+                    background-color: rgba(0, 0, 0, 0.4);
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
+                    p {
+                        font-size: 18px;
+                        text-align: center;
+                        padding: 24px;
+                        line-height: 1.4;
+                        color: #FFFFFF;
+                        font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        font-weight: 700;
+                    }
+                }
+
+                .see-more {
+                    height: 60px;
+                    background: rgba(255, 255, 255, 0.56);
+                    position: absolute;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 16px;
+                    opacity: 0;
+                    bottom: 0;
+                    -webkit-transition: opacity 0.35s;
+                    transition: opacity 0.35s;
                     font-size: 18px;
-                    text-align: center;
-                    padding: 24px;
-                    line-height: 1.4;
-                    color: #FFFFFF;
-                    font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-weight: 700;
+                    color: $primary;
+                }
+
+                &:hover {
+                    /*trasition effect for background*/
+                    background-position: 100% 100%;
+                    transition: background 1s;
+
+                    .see-more {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 50px 0;
+        padding-bottom: 100px;
+
+        h1 {
+            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 90px;
+            font-weight: 900;
+            text-align: left;
+            color: $white;
+            margin-bottom: 48px;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 70px;
+            }
+
+            @media screen and (max-width: 991px) {
+                font-size: 40px;
+            }
+        }
+
+        h3 {
+            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: $secundary;
+            font-size: 70px;
+            font-weight: 900;
+        }
+
+        p {
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 18px;
+            color: #FFFFFF;
+            line-height: 1.4;
+            text-align: center;
+
+            &.subtitle {
+                font-size: 26px;
+                text-align: left;
+                margin-bottom: 86px;
+            }
+        }
+
+        h6 {
+            font-family: 'muli', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: $white;
+            font-weight: 900;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                margin-right: 16px;
+
+                &:last-of-type {
+                    margin: 0;
+                }
+
+                a {
+                    display: block;
+                    width: 39px;
+                    height: 39px;
+                    padding: 8px;
+                    border: 2px solid $white;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:hover {
+                        background-color: $white;
+
+                        svg {
+                            path, rect {
+                                fill: $primary
+                            }
+                        }
+                    }
                 }
             }
         }

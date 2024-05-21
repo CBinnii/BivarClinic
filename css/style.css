@@ -20114,6 +20114,55 @@ table {
 input:active, input:focus, button:active, button:focus {
   outline: none; }
 
+figure.effect-dexter {
+  background: -webkit-linear-gradient(top, #258dc8 0%, #683c13 100%);
+  background: linear-gradient(to bottom, #258dc8 0%, #683c13 100%); }
+
+figure.effect-dexter img {
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s; }
+
+figure.effect-dexter:hover img {
+  opacity: 0.4; }
+
+figure.effect-dexter figcaption::after {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  height: -webkit-calc(50% - 30px);
+  height: calc(50% - 30px);
+  border: 7px solid #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }
+
+figure.effect-dexter:hover figcaption::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+figure.effect-dexter figcaption {
+  padding: 3em;
+  text-align: left; }
+
+figure.effect-dexter p {
+  position: absolute;
+  right: 60px;
+  bottom: 60px;
+  left: 60px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, -100px, 0);
+  transform: translate3d(0, -100px, 0); }
+
+figure.effect-dexter:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
 /* *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; } // required */
 .grid {
   position: relative;
@@ -20436,10 +20485,10 @@ figure.effect-goliath:hover p {
       margin-bottom: 24px; }
       @media screen and (max-width: 1200px) {
         .main .about h1, .main .about .h1 {
-          font-size: 50px; } }
+          font-size: 70px; } }
       @media screen and (max-width: 991px) {
         .main .about h1, .main .about .h1 {
-          font-size: 30px; } }
+          font-size: 40px; } }
     .main .about .left img {
       max-width: 100%;
       margin-bottom: 24px; }
@@ -20482,10 +20531,10 @@ figure.effect-goliath:hover p {
       margin-bottom: 24px; }
       @media screen and (max-width: 1200px) {
         .main .services h1, .main .services .h1 {
-          font-size: 50px; } }
+          font-size: 70px; } }
       @media screen and (max-width: 991px) {
         .main .services h1, .main .services .h1 {
-          font-size: 30px; } }
+          font-size: 40px; } }
   .main .clinic-case {
     padding: 50px 0; }
     .main .clinic-case h1, .main .clinic-case .h1 {
@@ -20497,10 +20546,10 @@ figure.effect-goliath:hover p {
       margin-bottom: 24px; }
       @media screen and (max-width: 1200px) {
         .main .clinic-case h1, .main .clinic-case .h1 {
-          font-size: 50px; } }
+          font-size: 70px; } }
       @media screen and (max-width: 991px) {
         .main .clinic-case h1, .main .clinic-case .h1 {
-          font-size: 30px; } }
+          font-size: 40px; } }
     .main .clinic-case p {
       font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 18px;
@@ -20508,6 +20557,62 @@ figure.effect-goliath:hover p {
       line-height: 1.4; }
     .main .clinic-case img {
       max-width: 100%; }
+    .main .clinic-case .swiper {
+      width: 100%;
+      height: 500px; }
+      .main .clinic-case .swiper .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .main .clinic-case .swiper .swiper-slide .about-slider {
+          position: absolute;
+          bottom: 35px;
+          right: 0;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: flex-end; }
+          .main .clinic-case .swiper .swiper-slide .about-slider p {
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.4; }
+          .main .clinic-case .swiper .swiper-slide .about-slider img {
+            width: 65px;
+            transform: rotate(270deg); }
+        .main .clinic-case .swiper .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .main .clinic-case .swiper-pagination {
+      position: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .main .clinic-case .swiper-pagination .swiper-pagination-bullet {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        text-align: left;
+        line-height: 20px;
+        font-size: 12px;
+        color: #FFFFFF;
+        opacity: 1;
+        background: transparent;
+        font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 1.4; }
+      .main .clinic-case .swiper-pagination .swiper-pagination-bullet-active {
+        color: #fff;
+        font-weight: 900;
+        background: transparent; }
   .main .blog {
     padding: 50px 0; }
     .main .blog h1, .main .blog .h1 {
@@ -20519,10 +20624,10 @@ figure.effect-goliath:hover p {
       margin-bottom: 24px; }
       @media screen and (max-width: 1200px) {
         .main .blog h1, .main .blog .h1 {
-          font-size: 50px; } }
+          font-size: 70px; } }
       @media screen and (max-width: 991px) {
         .main .blog h1, .main .blog .h1 {
-          font-size: 30px; } }
+          font-size: 40px; } }
     .main .blog p {
       font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 18px;
@@ -20547,22 +20652,110 @@ figure.effect-goliath:hover p {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        position: relative; }
-        .main .blog .post .img p {
+        position: relative;
+        overflow: hidden; }
+        .main .blog .post .img a {
+          text-decoration: none; }
+        .main .blog .post .img .overlay {
           position: absolute;
           width: 100%;
           height: 100%;
-          background-color: rgba(0, 0, 0, 0.47);
+          background-color: rgba(0, 0, 0, 0.4);
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .main .blog .post .img .overlay p {
+            font-size: 18px;
+            text-align: center;
+            padding: 24px;
+            line-height: 1.4;
+            color: #FFFFFF;
+            font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700; }
+        .main .blog .post .img .see-more {
+          height: 60px;
+          background: rgba(255, 255, 255, 0.56);
+          position: absolute;
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
+          padding: 16px;
+          opacity: 0;
+          bottom: 0;
+          -webkit-transition: opacity 0.35s;
+          transition: opacity 0.35s;
           font-size: 18px;
-          text-align: center;
-          padding: 24px;
-          line-height: 1.4;
-          color: #FFFFFF;
-          font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-          font-weight: 700; }
+          font-weight: 700;
+          color: #192B39; }
+        .main .blog .post .img:hover {
+          /*trasition effect for background*/
+          background-position: 100% 100%;
+          transition: background 1s; }
+          .main .blog .post .img:hover .see-more {
+            opacity: 1; }
+  .main .contact {
+    padding: 50px 0;
+    padding-bottom: 100px; }
+    .main .contact h1, .main .contact .h1 {
+      font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 90px;
+      font-weight: 900;
+      text-align: left;
+      color: #FFFFFF;
+      margin-bottom: 48px; }
+      @media screen and (max-width: 1200px) {
+        .main .contact h1, .main .contact .h1 {
+          font-size: 70px; } }
+      @media screen and (max-width: 991px) {
+        .main .contact h1, .main .contact .h1 {
+          font-size: 40px; } }
+    .main .contact h3, .main .contact .h3 {
+      font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #688FA4;
+      font-size: 70px;
+      font-weight: 900; }
+    .main .contact p {
+      font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 18px;
+      color: #FFFFFF;
+      line-height: 1.4;
+      text-align: center; }
+      .main .contact p.subtitle {
+        font-size: 26px;
+        text-align: left;
+        margin-bottom: 86px; }
+    .main .contact h6, .main .contact .h6 {
+      font-family: 'muli', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #FFFFFF;
+      font-weight: 900; }
+    .main .contact img {
+      max-width: 100%; }
+    .main .contact ul {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .main .contact ul li {
+        margin-right: 16px; }
+        .main .contact ul li:last-of-type {
+          margin: 0; }
+        .main .contact ul li a {
+          display: block;
+          width: 39px;
+          height: 39px;
+          padding: 8px;
+          border: 2px solid #FFFFFF;
+          border-radius: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .main .contact ul li a:hover {
+            background-color: #FFFFFF; }
+            .main .contact ul li a:hover svg path, .main .contact ul li a:hover svg rect {
+              fill: #192B39; }
 
 .button {
   display: flex;
@@ -20598,7 +20791,8 @@ figure.effect-goliath:hover p {
 
 body {
   background: right 16px top 34px url("../images/clinic.png") #192B39 no-repeat;
-  background-size: 110px; }
+  background-size: 110px;
+  background-attachment: fixed; }
   @media screen and (max-width: 991px) {
     body {
       background: right 8px top 100px url("../images/clinic.png") #192B39 no-repeat;
