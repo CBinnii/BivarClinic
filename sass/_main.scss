@@ -21,11 +21,11 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            padding-bottom: 140px;
+            padding-bottom: 90px;
 
             @media screen and (max-width: 991px) {
                 height: 430px;
-                padding-bottom: 60px;
+                padding-bottom: 50px;
             }
 
             @media screen and (max-width: 540px) {
@@ -36,7 +36,7 @@
 
             h1 {
                 font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 50px;
+                font-size: 70px;
                 font-weight: 900;
                 text-align: center;
                 color: $primary;
@@ -169,7 +169,6 @@
             max-width: 100%;
         }
 
-
         .swiper {
             width: 100%;
             height: 500px;
@@ -236,11 +235,12 @@
                 font-size: 18px;
                 color: #FFFFFF;
                 line-height: 1.4;
+                padding-bottom: 4px;
             }
 
             .swiper-pagination-bullet-active {
                 color: #fff;
-                font-weight: 900;
+                font-weight: 500;
                 background: transparent;
             }
         }
@@ -380,7 +380,7 @@
             font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: $secundary;
             font-size: 70px;
-            font-weight: 900;
+            font-weight: 400;
         }
 
         p {
@@ -394,6 +394,11 @@
                 font-size: 26px;
                 text-align: left;
                 margin-bottom: 86px;
+            }
+
+            a {
+                color: $white;
+                text-decoration: none;
             }
         }
 

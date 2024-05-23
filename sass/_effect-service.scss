@@ -156,6 +156,7 @@ figure.effect-goliath p {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(0,50px,0);
 	transform: translate3d(0,50px,0);
+	font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
 
     @media screen and (max-width: 767px) {
         opacity: 1;
