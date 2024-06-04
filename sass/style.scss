@@ -75,6 +75,13 @@ body {
     @media screen and (max-width: 540px) {
 		background: $primary no-repeat;
     }
+
+    .img-fixed {
+        position: fixed;
+        top: 34px;
+        right: 16px;
+        width: 110px;
+    }
 }
 
 .desktop {

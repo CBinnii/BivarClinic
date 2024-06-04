@@ -1,6 +1,24 @@
 .main {
     min-height: 1700px;
 
+    .title-section {
+        font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 90px;
+        font-weight: 900;
+        text-align: left;
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 70px;
+        }
+
+        @media screen and (max-width: 991px) {
+            font-size: 40px;
+        }
+    }
+
     .slider {
         margin-right: 142px;
 
@@ -20,24 +38,24 @@
             background-size: cover;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
-            padding-bottom: 90px;
+            align-items: flex-start;
+            padding-top: 90px;
 
             @media screen and (max-width: 991px) {
                 height: 430px;
-                padding-bottom: 50px;
+                padding-top: 50px;
             }
 
             @media screen and (max-width: 540px) {
                 height: 230px;
-                padding-bottom: 30px;
+                padding-top: 30px;
                 text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.50);
             }
 
             h1 {
-                font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 font-size: 70px;
-                font-weight: 900;
+                font-weight: 400;
                 text-align: center;
                 color: $primary;
 
@@ -50,23 +68,7 @@
 
     .about {
         padding: 50px 0;
-
-        h1 {
-            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 90px;
-            font-weight: 900;
-            text-align: left;
-            color: $white;
-            margin-bottom: 24px;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 70px;
-            }
-
-            @media screen and (max-width: 991px) {
-                font-size: 40px;
-            }
-        }
+        background-color: #6790A7;
 
         .left {
             img {
@@ -119,44 +121,11 @@
 
     .services {
         padding: 50px 0;
-
-        h1 {
-            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 90px;
-            font-weight: 900;
-            text-align: left;
-            color: $white;
-            margin-bottom: 24px;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 70px;
-            }
-
-            @media screen and (max-width: 991px) {
-                font-size: 40px;
-            }
-        }
+        background-color: #566774;
     }
 
     .clinic-case {
         padding: 50px 0;
-
-        h1 {
-            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 90px;
-            font-weight: 900;
-            text-align: left;
-            color: $white;
-            margin-bottom: 24px;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 70px;
-            }
-
-            @media screen and (max-width: 991px) {
-                font-size: 40px;
-            }
-        }
 
         p {
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -248,23 +217,7 @@
 
     .blog {
         padding: 50px 0;
-
-        h1 {
-            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 90px;
-            font-weight: 900;
-            text-align: left;
-            color: $white;
-            margin-bottom: 24px;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 70px;
-            }
-
-            @media screen and (max-width: 991px) {
-                font-size: 40px;
-            }
-        }
+        background-color: #6790A7;
 
         p {
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -358,23 +311,7 @@
     .contact {
         padding: 50px 0;
         padding-bottom: 100px;
-
-        h1 {
-            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-size: 90px;
-            font-weight: 900;
-            text-align: left;
-            color: $white;
-            margin-bottom: 48px;
-
-            @media screen and (max-width: 1200px) {
-                font-size: 70px;
-            }
-
-            @media screen and (max-width: 991px) {
-                font-size: 40px;
-            }
-        }
+        background-color: #566774;
 
         h3 {
             font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
