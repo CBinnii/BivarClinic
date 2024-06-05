@@ -3,7 +3,7 @@
 
     .title-section {
         font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 90px;
+        font-size: 110px;
         font-weight: 900;
         text-align: left;
         color: $white;
@@ -155,7 +155,7 @@
                     position: absolute;
                     bottom: 35px;
                     right: 0;
-        
+
                     display: flex;
                     align-items: center;
                     width: 100%;
@@ -168,7 +168,7 @@
                         color: #FFFFFF;
                         line-height: 1.4;
                     }
-                    
+
                     img {
                         width: 65px;
                         transform: rotate(270deg);
@@ -212,6 +212,38 @@
                 font-weight: 500;
                 background: transparent;
             }
+        }
+
+        .nav-pills-custom .nav-link {
+            color: #aaa;
+            background: #fff;
+            position: relative;
+        }
+
+        .nav-pills-custom .nav-link.active {
+            color: #45b649;
+            background: #fff;
+        }
+
+
+        /* Add indicator arrow for the active tab */
+        @media (min-width: 992px) {
+            .nav-pills-custom .nav-link::before {
+                content: '';
+                display: block;
+                border-top: 8px solid transparent;
+                border-left: 10px solid #fff;
+                border-bottom: 8px solid transparent;
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+        }
+
+        .nav-pills-custom .nav-link.active::before {
+            opacity: 1;
         }
     }
 
@@ -310,14 +342,20 @@
 
     .contact {
         padding: 50px 0;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
         background-color: #566774;
+
+        img {
+            width: 160px;
+            margin-top: 100px;
+        }
 
         h3 {
             font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: $secundary;
-            font-size: 70px;
-            font-weight: 400;
+            font-size: 60px;
+            font-weight: 500;
+            margin-bottom: 50px;
         }
 
         p {
@@ -379,7 +417,9 @@
                         background-color: $white;
 
                         svg {
-                            path, rect {
+
+                            path,
+                            rect {
                                 fill: $primary
                             }
                         }

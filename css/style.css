@@ -20442,7 +20442,7 @@ figure.effect-goliath:hover p {
   min-height: 1700px; }
   .main .title-section {
     font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 90px;
+    font-size: 110px;
     font-weight: 900;
     text-align: left;
     color: #FFFFFF;
@@ -20528,7 +20528,8 @@ figure.effect-goliath:hover p {
     padding: 50px 0;
     background-color: #566774; }
   .main .clinic-case {
-    padding: 50px 0; }
+    padding: 50px 0;
+    /* Add indicator arrow for the active tab */ }
     .main .clinic-case p {
       font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 18px;
@@ -20593,6 +20594,27 @@ figure.effect-goliath:hover p {
         color: #fff;
         font-weight: 500;
         background: transparent; }
+    .main .clinic-case .nav-pills-custom .nav-link {
+      color: #aaa;
+      background: #fff;
+      position: relative; }
+    .main .clinic-case .nav-pills-custom .nav-link.active {
+      color: #45b649;
+      background: #fff; }
+    @media (min-width: 992px) {
+      .main .clinic-case .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0; } }
+    .main .clinic-case .nav-pills-custom .nav-link.active::before {
+      opacity: 1; }
   .main .blog {
     padding: 50px 0;
     background-color: #6790A7; }
@@ -20664,13 +20686,17 @@ figure.effect-goliath:hover p {
             opacity: 1; }
   .main .contact {
     padding: 50px 0;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     background-color: #566774; }
+    .main .contact img {
+      width: 160px;
+      margin-top: 100px; }
     .main .contact h3, .main .contact .h3 {
       font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       color: #688FA4;
-      font-size: 70px;
-      font-weight: 400; }
+      font-size: 60px;
+      font-weight: 500;
+      margin-bottom: 50px; }
     .main .contact p {
       font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 18px;
@@ -20713,7 +20739,8 @@ figure.effect-goliath:hover p {
           justify-content: center; }
           .main .contact ul li a:hover {
             background-color: #FFFFFF; }
-            .main .contact ul li a:hover svg path, .main .contact ul li a:hover svg rect {
+            .main .contact ul li a:hover svg path,
+            .main .contact ul li a:hover svg rect {
               fill: #192B39; }
 
 .button {
@@ -20749,21 +20776,23 @@ figure.effect-goliath:hover p {
         margin-bottom: 30px; } }
 
 body {
-  background: right 16px top 34px url("../images/clinic.png") #192B39 no-repeat;
-  background-size: 110px;
-  background-attachment: fixed; }
-  @media screen and (max-width: 991px) {
-    body {
-      background: right 8px top 100px url("../images/clinic.png") #192B39 no-repeat;
-      background-size: 60px; } }
-  @media screen and (max-width: 540px) {
-    body {
-      background: #192B39 no-repeat; } }
+  background: #192B39; }
   body .img-fixed {
     position: fixed;
     top: 34px;
     right: 16px;
-    width: 110px; }
+    width: 110px;
+    opacity: 0.7; }
+    @media screen and (max-width: 991px) {
+      body .img-fixed {
+        right: 8px;
+        top: 100px;
+        width: 60px; } }
+    @media screen and (max-width: 540px) {
+      body .img-fixed {
+        display: none; } }
+  body .section {
+    padding: 100px 0 !important; }
 
 .desktop {
   display: block; }
