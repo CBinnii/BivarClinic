@@ -20463,7 +20463,6 @@ figure.effect-goliath:hover p {
       .main .slider {
         margin-right: 0; } }
     .main .slider .banner {
-      background-image: url("../images/slider.jpg");
       background-position: center;
       background-repeat: no-repeat;
       height: 650px;
@@ -20574,10 +20573,12 @@ figure.effect-goliath:hover p {
       position: inherit;
       display: flex;
       flex-direction: column;
-      justify-content: center; }
+      justify-content: center;
+      margin-top: 16px; }
       .main .clinic-case .swiper-pagination .swiper-pagination-bullet {
         width: 100%;
         height: auto;
+        margin: 0;
         border-radius: 0;
         text-align: left;
         line-height: 20px;
@@ -20595,12 +20596,36 @@ figure.effect-goliath:hover p {
         font-weight: 500;
         background: transparent; }
     .main .clinic-case .nav-pills-custom .nav-link {
-      color: #aaa;
-      background: #fff;
+      color: #FFFFFF;
+      background: transparent;
+      border: 1px solid #FFFFFF;
       position: relative; }
     .main .clinic-case .nav-pills-custom .nav-link.active {
-      color: #45b649;
-      background: #fff; }
+      color: #192B39;
+      border: 1px solid #FFFFFF;
+      background: #FFFFFF; }
+      .main .clinic-case .nav-pills-custom .nav-link.active .swiper-pagination {
+        position: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .main .clinic-case .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet {
+          width: 100%;
+          margin: 0;
+          height: auto;
+          border-radius: 0;
+          text-align: left;
+          opacity: 1;
+          background: transparent;
+          font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 18px;
+          color: #192B39;
+          line-height: 1.4;
+          padding-bottom: 4px; }
+        .main .clinic-case .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet-active {
+          color: #192B39;
+          font-weight: 500;
+          background: transparent; }
     @media (min-width: 992px) {
       .main .clinic-case .nav-pills-custom .nav-link::before {
         content: '';

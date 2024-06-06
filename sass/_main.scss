@@ -31,7 +31,6 @@
         }
 
         .banner {
-            background-image: url('../images/slider.jpg');
             background-position: center;
             background-repeat: no-repeat;
             height: 650px;
@@ -189,10 +188,12 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-top: 16px;
 
             .swiper-pagination-bullet {
                 width: 100%;
                 height: auto;
+                margin: 0;
                 border-radius: 0;
                 text-align: left;
                 line-height: 20px;
@@ -215,14 +216,44 @@
         }
 
         .nav-pills-custom .nav-link {
-            color: #aaa;
-            background: #fff;
+            color: $white;
+            background: transparent;
+            border: 1px solid $white;
             position: relative;
         }
 
         .nav-pills-custom .nav-link.active {
-            color: #45b649;
-            background: #fff;
+            color: $primary;
+            border: 1px solid $white;
+            background: $white;
+            
+            .swiper-pagination {
+                position: inherit;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .swiper-pagination-bullet {
+                    width: 100%;
+                    margin: 0;
+                    height: auto;
+                    border-radius: 0;
+                    text-align: left;
+                    opacity: 1;
+                    background: transparent;
+                    font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 18px;
+                    color: $primary;
+                    line-height: 1.4;
+                    padding-bottom: 4px;
+                }
+
+                .swiper-pagination-bullet-active {
+                    color: $primary;
+                    font-weight: 500;
+                    background: transparent;
+                }
+            }
         }
 
 
