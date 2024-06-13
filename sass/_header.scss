@@ -1,5 +1,5 @@
 .header {
-	background-color: transparent;
+	background-color: $white;
 	height: 142px;
 
 	@media screen and (max-width: 1200px) {
@@ -15,7 +15,7 @@
 		}
 
 		.container-fluid {
-			align-items: flex-end;
+			align-items: center;
 
 			@media screen and (max-width: 991px) {
 				align-items: center;
@@ -25,14 +25,14 @@
 
 		.navbar-brand {
 			img {
-				max-width: 150px;
+				max-width: 400px;
 
 				@media screen and (max-width: 1200px) {
-					max-width: 120px;
+					max-width: 200px;
 				}
 
 				@media screen and (max-width: 991px) {
-					max-width: 100px;
+					max-width: 150px;
 				}
 			}
 		}
@@ -56,7 +56,7 @@
 					width: 30px;
 					height: 3px;
 					margin: 6px auto;
-					background-color: $white;
+					background-color: $primary;
 					border-radius: 10px;
 					-webkit-transition: 0.3s;
 					transition: 0.3s;
@@ -94,8 +94,6 @@
 
 		.navbar-collapse {
 			justify-content: center;
-			margin-bottom: 34px;
-			margin-right: 126px;
 
 			@media screen and (max-width: 991px) {
 				margin: 0;
@@ -125,14 +123,14 @@
 						font-size: 18px;
 						font-weight: 400;
 						padding: 0;
-						color: $white;
+						color: $primary;
 
 						&:after {
 							content: '';
 							display: block;
 							width: 0;
 							height: 2px;
-							background: $white;
+							background: $primary;
 							transition: width .3s;
 							margin-top: 4px;
 						}

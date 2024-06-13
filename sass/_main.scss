@@ -6,7 +6,6 @@
         font-size: 110px;
         font-weight: 900;
         text-align: left;
-        color: $white;
         text-transform: uppercase;
         margin-bottom: 24px;
 
@@ -17,19 +16,25 @@
         @media screen and (max-width: 991px) {
             font-size: 40px;
         }
+
+        &.white {
+            color: $white;
+        }
+
+        &.primary {
+            color: $primary;
+        }
+
+        &.secundary {
+            color: $secundary;
+        }
+
+        &.terciary {
+            color: $terciary;
+        }
     }
 
     .slider {
-        margin-right: 142px;
-
-        @media screen and (max-width: 991px) {
-            margin-right: 82px;
-        }
-
-        @media screen and (max-width: 540px) {
-            margin-right: 0;
-        }
-
         .banner {
             background-position: center;
             background-repeat: no-repeat;
@@ -67,7 +72,7 @@
 
     .about {
         padding: 50px 0;
-        background-color: #6790A7;
+        background-color: $white;
 
         .left {
             img {
@@ -77,7 +82,7 @@
 
             p {
                 text-align: left;
-                color: $white;
+                color: $primary;
 
                 @media screen and (max-width: 991px) {
                     text-align: center;
@@ -105,7 +110,7 @@
             p {
                 font-family: 'muli', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 text-align: right;
-                color: $white;
+                color: $primary;
                 font-size: 18px;
                 line-height: 1.6;
 
@@ -120,16 +125,25 @@
 
     .services {
         padding: 50px 0;
-        background-color: #566774;
+        background-color: $gray-5;
     }
 
     .clinic-case {
         padding: 50px 0;
+        background-color: $white;
+        
+        .title-tab {
+            font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 24px;
+            text-align: center;
+            display: block;
+            font-weight: 900;
+        }
 
         p {
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 18px;
-            color: #FFFFFF;
+            color: $primary;
             line-height: 1.4;
         }
 
@@ -144,7 +158,6 @@
             .swiper-slide {
                 text-align: center;
                 font-size: 18px;
-                background: #fff;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -164,7 +177,7 @@
                         font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                         font-size: 24px;
                         font-weight: 700;
-                        color: #FFFFFF;
+                        color: $white;
                         line-height: 1.4;
                     }
 
@@ -191,41 +204,50 @@
             margin-top: 16px;
 
             .swiper-pagination-bullet {
+                font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 width: 100%;
                 height: auto;
                 margin: 0;
                 border-radius: 0;
                 text-align: left;
-                line-height: 20px;
-                font-size: 12px;
-                color: #FFFFFF;
                 opacity: 1;
                 background: transparent;
-                font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 font-size: 18px;
-                color: #FFFFFF;
+                color: $primary;
                 line-height: 1.4;
                 padding-bottom: 4px;
             }
 
             .swiper-pagination-bullet-active {
-                color: #fff;
+                color: $white;
                 font-weight: 500;
                 background: transparent;
             }
         }
 
         .nav-pills-custom .nav-link {
-            color: $white;
+            color: $primary;
             background: transparent;
-            border: 1px solid $white;
+            border: 1px solid $primary;
             position: relative;
+
+            .nav-pills-content {
+                display: none;
+            }
+
+            .swiper-pagination-bullet {
+                color: $primary;
+            }
         }
 
         .nav-pills-custom .nav-link.active {
-            color: $primary;
-            border: 1px solid $white;
-            background: $white;
+            color: $white;
+            border: 1px solid $primary;
+            background: $primary;
+
+            .nav-pills-content {
+                display: block;
+            }
             
             .swiper-pagination {
                 position: inherit;
@@ -243,13 +265,13 @@
                     background: transparent;
                     font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 18px;
-                    color: $primary;
+                    color: $white;
                     line-height: 1.4;
                     padding-bottom: 4px;
                 }
 
                 .swiper-pagination-bullet-active {
-                    color: $primary;
+                    color: $white;
                     font-weight: 500;
                     background: transparent;
                 }
@@ -263,7 +285,7 @@
                 content: '';
                 display: block;
                 border-top: 8px solid transparent;
-                border-left: 10px solid #fff;
+                border-left: 10px solid $primary;
                 border-bottom: 8px solid transparent;
                 position: absolute;
                 top: 50%;
@@ -285,7 +307,7 @@
         p {
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 18px;
-            color: #FFFFFF;
+            color: $primary;
             line-height: 1.4;
         }
 
@@ -373,12 +395,14 @@
 
     .contact {
         padding: 50px 0;
-        padding-bottom: 0px;
-        background-color: #566774;
+        padding-bottom: 0px !important;
+        background-color: $white;
 
         img {
-            width: 160px;
-            margin-top: 100px;
+            width: 600px;
+            margin: 0 auto;
+            display: block;
+            margin-top: 32px;
         }
 
         h3 {
@@ -392,7 +416,7 @@
         p {
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 18px;
-            color: #FFFFFF;
+            color: $primary;
             line-height: 1.4;
             text-align: center;
 
@@ -403,7 +427,7 @@
             }
 
             a {
-                color: $white;
+                color: $primary;
                 text-decoration: none;
             }
         }
@@ -413,7 +437,7 @@
             font-size: 20px;
             text-align: center;
             margin-bottom: 30px;
-            color: $white;
+            color: $primary;
             font-weight: 900;
         }
 
@@ -438,25 +462,35 @@
                     width: 39px;
                     height: 39px;
                     padding: 8px;
-                    border: 2px solid $white;
+                    border: 2px solid $primary;
                     border-radius: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
+                    svg {
+                        path,
+                        rect {
+                            fill: $primary
+                        }
+                    }
+
                     &:hover {
-                        background-color: $white;
+                        background-color: $primary;
 
                         svg {
-
                             path,
                             rect {
-                                fill: $primary
+                                fill: $white
                             }
                         }
                     }
                 }
             }
+        }
+
+        iframe {
+            margin-top: 50px;
         }
     }
 }
