@@ -20823,7 +20823,8 @@ figure.effect-goliath:hover p {
       align-items: center;
       justify-content: center; }
       .main .contact ul li {
-        margin-right: 16px; }
+        margin-right: 16px;
+        list-style: none; }
         .main .contact ul li:last-of-type {
           margin: 0; }
         .main .contact ul li a {
@@ -20844,12 +20845,110 @@ figure.effect-goliath:hover p {
             .main .contact ul li a:hover svg path,
             .main .contact ul li a:hover svg rect {
               fill: #FFFFFF; }
+    .main .contact .book {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .main .contact .book a {
+        font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px; }
+        .main .contact .book a .circle {
+          width: 50px;
+          height: 50px;
+          background-color: #192B39;
+          color: #FFFFFF;
+          border-radius: 100%;
+          width: 75px;
+          height: 75px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-right: 4px;
+          padding-right: 4px; }
     .main .contact iframe {
       margin-top: 50px; }
 
-.main {
+.chat {
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+  right: 27px; }
+  .chat .chat-channel {
+    width: 54px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border-radius: 100%; }
+    .chat .chat-channel a {
+      display: block;
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      outline: 0; }
+    .chat .chat-channel .chat-tooltip {
+      opacity: 0.4; }
+      .chat .chat-channel .chat-tooltip .chat-icon .chat-svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        margin: 0;
+        cursor: pointer;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+        background-color: #192B39; }
+        .chat .chat-channel .chat-tooltip .chat-icon .chat-svg img {
+          width: 39px;
+          height: 39px; }
+      .chat .chat-channel .chat-tooltip .on-hover-text {
+        background: #192B39;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF;
+        width: 205px;
+        height: 50px;
+        border-radius: 40px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        display: none;
+        position: relative; }
+        .chat .chat-channel .chat-tooltip .on-hover-text::before {
+          left: 100%;
+          top: 50%;
+          border: solid transparent;
+          content: "";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-color: rgba(124, 216, 84, 0);
+          border-left-color: #192B39;
+          border-width: 5px;
+          margin-top: -5px; }
+      .chat .chat-channel .chat-tooltip:hover {
+        opacity: 1; }
+        .chat .chat-channel .chat-tooltip:hover .on-hover-text {
+          animation: ease-out forwards tooltips-horz;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0;
+          right: 60px; }
+          .chat .chat-channel .chat-tooltip:hover .on-hover-text::before {
+            display: block;
+            content: ""; }
+
+.main, .single {
   min-height: 1700px; }
-  .main .title-single {
+  .main .title-single, .single .title-single {
     font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 60px;
     font-weight: 900;
@@ -20857,21 +20956,21 @@ figure.effect-goliath:hover p {
     text-transform: uppercase;
     margin-bottom: 24px; }
     @media screen and (max-width: 1200px) {
-      .main .title-single {
+      .main .title-single, .single .title-single {
         font-size: 70px; } }
     @media screen and (max-width: 991px) {
-      .main .title-single {
+      .main .title-single, .single .title-single {
         font-size: 40px;
         margin-bottom: 20px; } }
-    .main .title-single.white {
+    .main .title-single.white, .single .title-single.white {
       color: #FFFFFF; }
-    .main .title-single.primary {
+    .main .title-single.primary, .single .title-single.primary {
       color: #192B39; }
-    .main .title-single.secundary {
+    .main .title-single.secundary, .single .title-single.secundary {
       color: #688FA4; }
-    .main .title-single.terciary {
+    .main .title-single.terciary, .single .title-single.terciary {
       color: #465D6C; }
-  .main .slider-single .banner {
+  .main .slider-single .banner, .single .slider-single .banner {
     background-position: center;
     background-repeat: no-repeat;
     height: 650px;
@@ -20879,46 +20978,46 @@ figure.effect-goliath:hover p {
     display: flex;
     justify-content: center;
     align-items: flex-start; }
-  .main .services-single {
+  .main .services-single, .single .services-single {
     background-color: #f3f2f2; }
-    .main .services-single p {
+    .main .services-single p, .single .services-single p {
       font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 18px;
       color: #192B39;
       line-height: 1.4;
       margin-bottom: 16px; }
-      .main .services-single p:last-of-type {
+      .main .services-single p:last-of-type, .single .services-single p:last-of-type {
         margin-bottom: 0; }
-  .main .clinic-case-single {
+  .main .clinic-case-single, .single .clinic-case-single {
     background-color: #FFFFFF;
     /* Add indicator arrow for the active tab */ }
-    .main .clinic-case-single .title-tab {
+    .main .clinic-case-single .title-tab, .single .clinic-case-single .title-tab {
       font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 24px;
       text-align: center;
       display: block;
       font-weight: 900; }
-    .main .clinic-case-single p {
+    .main .clinic-case-single p, .single .clinic-case-single p {
       font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 18px;
       color: #192B39;
       line-height: 1.4; }
-    .main .clinic-case-single img {
+    .main .clinic-case-single img, .single .clinic-case-single img {
       max-width: 100%; }
-    .main .clinic-case-single .swiper {
+    .main .clinic-case-single .swiper, .single .clinic-case-single .swiper {
       width: 100%;
       height: 500px; }
       @media screen and (max-width: 767px) {
-        .main .clinic-case-single .swiper {
+        .main .clinic-case-single .swiper, .single .clinic-case-single .swiper {
           height: 250px; } }
-      .main .clinic-case-single .swiper .swiper-slide {
+      .main .clinic-case-single .swiper .swiper-slide, .single .clinic-case-single .swiper .swiper-slide {
         text-align: center;
         font-size: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative; }
-        .main .clinic-case-single .swiper .swiper-slide .about-slider {
+        .main .clinic-case-single .swiper .swiper-slide .about-slider, .single .clinic-case-single .swiper .swiper-slide .about-slider {
           position: absolute;
           bottom: 35px;
           right: 0;
@@ -20926,27 +21025,27 @@ figure.effect-goliath:hover p {
           align-items: center;
           width: 100%;
           justify-content: flex-end; }
-          .main .clinic-case-single .swiper .swiper-slide .about-slider p {
+          .main .clinic-case-single .swiper .swiper-slide .about-slider p, .single .clinic-case-single .swiper .swiper-slide .about-slider p {
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 24px;
             font-weight: 700;
             color: #FFFFFF;
             line-height: 1.4; }
-          .main .clinic-case-single .swiper .swiper-slide .about-slider img {
+          .main .clinic-case-single .swiper .swiper-slide .about-slider img, .single .clinic-case-single .swiper .swiper-slide .about-slider img {
             width: 65px;
             transform: rotate(270deg); }
-        .main .clinic-case-single .swiper .swiper-slide img {
+        .main .clinic-case-single .swiper .swiper-slide img, .single .clinic-case-single .swiper .swiper-slide img {
           display: block;
           width: 100%;
           height: 100%;
           object-fit: cover; }
-    .main .clinic-case-single .swiper-pagination {
+    .main .clinic-case-single .swiper-pagination, .single .clinic-case-single .swiper-pagination {
       position: inherit;
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-top: 16px; }
-      .main .clinic-case-single .swiper-pagination .swiper-pagination-bullet {
+      .main .clinic-case-single .swiper-pagination .swiper-pagination-bullet, .single .clinic-case-single .swiper-pagination .swiper-pagination-bullet {
         font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         width: 100%;
         height: auto;
@@ -20959,31 +21058,31 @@ figure.effect-goliath:hover p {
         color: #192B39;
         line-height: 1.4;
         padding-bottom: 4px; }
-      .main .clinic-case-single .swiper-pagination .swiper-pagination-bullet-active {
+      .main .clinic-case-single .swiper-pagination .swiper-pagination-bullet-active, .single .clinic-case-single .swiper-pagination .swiper-pagination-bullet-active {
         color: #FFFFFF;
         font-weight: 500;
         background: transparent; }
-    .main .clinic-case-single .nav-pills-custom .nav-link {
+    .main .clinic-case-single .nav-pills-custom .nav-link, .single .clinic-case-single .nav-pills-custom .nav-link {
       color: #192B39;
       background: transparent;
       border: 1px solid #192B39;
       position: relative; }
-      .main .clinic-case-single .nav-pills-custom .nav-link .nav-pills-content {
+      .main .clinic-case-single .nav-pills-custom .nav-link .nav-pills-content, .single .clinic-case-single .nav-pills-custom .nav-link .nav-pills-content {
         display: none; }
-      .main .clinic-case-single .nav-pills-custom .nav-link .swiper-pagination-bullet {
+      .main .clinic-case-single .nav-pills-custom .nav-link .swiper-pagination-bullet, .single .clinic-case-single .nav-pills-custom .nav-link .swiper-pagination-bullet {
         color: #192B39; }
-    .main .clinic-case-single .nav-pills-custom .nav-link.active {
+    .main .clinic-case-single .nav-pills-custom .nav-link.active, .single .clinic-case-single .nav-pills-custom .nav-link.active {
       color: #FFFFFF;
       border: 1px solid #192B39;
       background: #192B39; }
-      .main .clinic-case-single .nav-pills-custom .nav-link.active .nav-pills-content {
+      .main .clinic-case-single .nav-pills-custom .nav-link.active .nav-pills-content, .single .clinic-case-single .nav-pills-custom .nav-link.active .nav-pills-content {
         display: block; }
-      .main .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination {
+      .main .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination, .single .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination {
         position: inherit;
         display: flex;
         flex-direction: column;
         justify-content: center; }
-        .main .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet {
+        .main .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet, .single .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet {
           width: 100%;
           margin: 0;
           height: auto;
@@ -20996,12 +21095,12 @@ figure.effect-goliath:hover p {
           color: #FFFFFF;
           line-height: 1.4;
           padding-bottom: 4px; }
-        .main .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet-active {
+        .main .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet-active, .single .clinic-case-single .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet-active {
           color: #FFFFFF;
           font-weight: 500;
           background: transparent; }
     @media (min-width: 992px) {
-      .main .clinic-case-single .nav-pills-custom .nav-link::before {
+      .main .clinic-case-single .nav-pills-custom .nav-link::before, .single .clinic-case-single .nav-pills-custom .nav-link::before {
         content: '';
         display: block;
         border-top: 8px solid transparent;
@@ -21012,25 +21111,25 @@ figure.effect-goliath:hover p {
         right: -10px;
         transform: translateY(-50%);
         opacity: 0; } }
-    .main .clinic-case-single .nav-pills-custom .nav-link.active::before {
+    .main .clinic-case-single .nav-pills-custom .nav-link.active::before, .single .clinic-case-single .nav-pills-custom .nav-link.active::before {
       opacity: 1; }
-  .main .blog-single {
+  .main .blog-single, .single .blog-single {
     background-color: #6790A7; }
-    .main .blog-single p {
+    .main .blog-single p, .single .blog-single p {
       font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       font-size: 18px;
       color: #192B39;
       line-height: 1.4;
       margin-bottom: 16px; }
-      .main .blog-single p:last-of-type {
+      .main .blog-single p:last-of-type, .single .blog-single p:last-of-type {
         margin-bottom: 0; }
-    .main .blog-single .divider {
+    .main .blog-single .divider, .single .blog-single .divider {
       border: none;
       height: 8px;
       margin: 0; }
-    .main .blog-single img {
+    .main .blog-single img, .single .blog-single img {
       max-width: 100%; }
-    .main .blog-single .post {
+    .main .blog-single .post, .single .blog-single .post {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -21038,9 +21137,9 @@ figure.effect-goliath:hover p {
       height: 500px;
       padding: 2px; }
       @media screen and (max-width: 991px) {
-        .main .blog-single .post {
+        .main .blog-single .post, .single .blog-single .post {
           height: 250px; } }
-      .main .blog-single .post .img {
+      .main .blog-single .post .img, .single .blog-single .post .img {
         height: 100%;
         width: 100%;
         background-position: center;
@@ -21048,9 +21147,9 @@ figure.effect-goliath:hover p {
         background-repeat: no-repeat;
         position: relative;
         overflow: hidden; }
-        .main .blog-single .post .img a {
+        .main .blog-single .post .img a, .single .blog-single .post .img a {
           text-decoration: none; }
-        .main .blog-single .post .img .overlay {
+        .main .blog-single .post .img .overlay, .single .blog-single .post .img .overlay {
           position: absolute;
           width: 100%;
           height: 100%;
@@ -21058,7 +21157,7 @@ figure.effect-goliath:hover p {
           display: flex;
           align-items: center;
           justify-content: center; }
-          .main .blog-single .post .img .overlay p {
+          .main .blog-single .post .img .overlay p, .single .blog-single .post .img .overlay p {
             font-size: 18px;
             text-align: center;
             padding: 24px;
@@ -21066,7 +21165,7 @@ figure.effect-goliath:hover p {
             color: #FFFFFF;
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-weight: 700; }
-        .main .blog-single .post .img .see-more {
+        .main .blog-single .post .img .see-more, .single .blog-single .post .img .see-more {
           height: 60px;
           background: rgba(255, 255, 255, 0.56);
           position: absolute;
@@ -21082,20 +21181,20 @@ figure.effect-goliath:hover p {
           font-size: 18px;
           font-weight: 700;
           color: #192B39; }
-        .main .blog-single .post .img:hover {
+        .main .blog-single .post .img:hover, .single .blog-single .post .img:hover {
           /*trasition effect for background*/
           background-position: 100% 100%;
           transition: background 1s; }
-          .main .blog-single .post .img:hover .see-more {
+          .main .blog-single .post .img:hover .see-more, .single .blog-single .post .img:hover .see-more {
             opacity: 1; }
-    .main .blog-single .post-2 {
+    .main .blog-single .post-2, .single .blog-single .post-2 {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 500px;
       padding: 2px; }
-      .main .blog-single .post-2 .img {
+      .main .blog-single .post-2 .img, .single .blog-single .post-2 .img {
         height: 100%;
         width: 100%;
         background-position: center;
@@ -21103,9 +21202,9 @@ figure.effect-goliath:hover p {
         background-repeat: no-repeat;
         position: relative;
         overflow: hidden; }
-        .main .blog-single .post-2 .img a {
+        .main .blog-single .post-2 .img a, .single .blog-single .post-2 .img a {
           text-decoration: none; }
-        .main .blog-single .post-2 .img .overlay {
+        .main .blog-single .post-2 .img .overlay, .single .blog-single .post-2 .img .overlay {
           position: absolute;
           width: 100%;
           height: 100%;
@@ -21113,7 +21212,7 @@ figure.effect-goliath:hover p {
           display: flex;
           align-items: center;
           justify-content: center; }
-          .main .blog-single .post-2 .img .overlay p {
+          .main .blog-single .post-2 .img .overlay p, .single .blog-single .post-2 .img .overlay p {
             font-size: 18px;
             text-align: center;
             padding: 24px;
@@ -21121,7 +21220,7 @@ figure.effect-goliath:hover p {
             color: #FFFFFF;
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-weight: 700; }
-        .main .blog-single .post-2 .img .see-more {
+        .main .blog-single .post-2 .img .see-more, .single .blog-single .post-2 .img .see-more {
           height: 60px;
           background: rgba(255, 255, 255, 0.56);
           position: absolute;
@@ -21137,12 +21236,38 @@ figure.effect-goliath:hover p {
           font-size: 18px;
           font-weight: 700;
           color: #192B39; }
-        .main .blog-single .post-2 .img:hover {
+        .main .blog-single .post-2 .img:hover, .single .blog-single .post-2 .img:hover {
           /*trasition effect for background*/
           background-position: 100% 100%;
           transition: background 1s; }
-          .main .blog-single .post-2 .img:hover .see-more {
+          .main .blog-single .post-2 .img:hover .see-more, .single .blog-single .post-2 .img:hover .see-more {
             opacity: 1; }
+  .main .text-center, .single .text-center {
+    text-align: center; }
+  .main .text-left, .single .text-left {
+    text-align: left; }
+  .main .text-right, .single .text-right {
+    text-align: right; }
+  .main .text-justify, .single .text-justify {
+    text-align: justify; }
+  .main p, .single p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 20px; }
+  .main ul, .single ul {
+    margin: 20px 0;
+    list-style: disc;
+    list-style-position: inside; }
+    .main ul li, .single ul li {
+      font-size: 16px;
+      margin-bottom: 0; }
+  .main ol, .single ol {
+    margin: 20px 0;
+    list-style: decimal;
+    list-style-position: inside; }
+    .main ol li, .single ol li {
+      font-size: 16px;
+      margin-bottom: 0; }
 
 .button {
   display: flex;

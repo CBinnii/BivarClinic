@@ -533,6 +533,7 @@
 
             li {
                 margin-right: 16px;
+                list-style: none;
 
                 &:last-of-type {
                     margin: 0;
@@ -566,6 +567,37 @@
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .book {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 12px;
+
+                .circle {
+                    width: 50px;
+                    height: 50px;
+                    background-color: $primary;
+                    color: $white;
+                    border-radius: 100%;
+                    width: 75px;
+                    height: 75px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-right: 4px;
+                    padding-right: 4px;
                 }
             }
         }

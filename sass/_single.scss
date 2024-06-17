@@ -1,4 +1,4 @@
-.main {
+.main, .single {
     min-height: 1700px;
 
     .title-single {
@@ -408,6 +408,51 @@
                     }
                 }
             }
+        }
+    }
+
+    
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+    
+    .text-right {
+        text-align: right;
+    }
+    
+    .text-justify {
+        text-align: justify;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin: 20px 0;
+        list-style: disc;
+        list-style-position: inside;
+
+        li {
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    ol {
+        margin: 20px 0;
+        list-style: decimal;
+        list-style-position: inside;
+
+        li {
+            font-size: 16px;
+            margin-bottom: 0;
         }
     }
 }
