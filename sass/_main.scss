@@ -3,7 +3,7 @@
 
     .title-section {
         font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 110px;
+        font-size: 80px;
         font-weight: 900;
         text-align: left;
         text-transform: uppercase;
@@ -221,7 +221,7 @@
             }
 
             .swiper-pagination-bullet-active {
-                color: $white;
+                color: $primary;
                 font-weight: 500;
                 background: transparent;
             }
@@ -232,6 +232,7 @@
             background: transparent;
             border: 1px solid $primary;
             position: relative;
+            max-width: 100%;
 
             .nav-pills-content {
                 display: none;
@@ -243,9 +244,9 @@
         }
 
         .nav-pills-custom .nav-link.active {
-            color: $white;
+            color: $primary;
             border: 1px solid $primary;
-            background: $primary;
+            background: $white;
 
             .nav-pills-content {
                 display: block;
@@ -258,6 +259,7 @@
                 justify-content: center;
 
                 .swiper-pagination-bullet {
+                    word-break: break-word;
                     width: 100%;
                     margin: 0;
                     height: auto;
@@ -267,13 +269,13 @@
                     background: transparent;
                     font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     font-size: 18px;
-                    color: $white;
+                    color: $primary;
                     line-height: 1.4;
                     padding-bottom: 4px;
                 }
 
                 .swiper-pagination-bullet-active {
-                    color: $white;
+                    color: $primary;
                     font-weight: 500;
                     background: transparent;
                 }
@@ -478,6 +480,7 @@
             margin: 0 auto;
             display: block;
             margin-top: 32px;
+            margin-bottom: 32px;
         }
 
         h3 {

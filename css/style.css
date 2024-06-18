@@ -20326,7 +20326,7 @@ figure.effect-goliath:hover p {
   @media screen and (max-width: 1200px) {
     .header {
       height: 90px; } }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     .header {
       height: 120px; } }
   .header .navbar {
@@ -20432,7 +20432,8 @@ figure.effect-goliath:hover p {
 .footer {
   color: #FFFFFF;
   padding: 24px 0;
-  background-color: #566774; }
+  background-color: #566774;
+  background: linear-gradient(180deg, rgba(104, 143, 164, 0.4570203081) 0%, #688fa4 100%); }
   .footer img {
     width: 160px;
     margin-bottom: 16px; }
@@ -20446,7 +20447,7 @@ figure.effect-goliath:hover p {
   min-height: 1700px; }
   .main .title-section {
     font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 110px;
+    font-size: 80px;
     font-weight: 900;
     text-align: left;
     text-transform: uppercase;
@@ -20599,22 +20600,23 @@ figure.effect-goliath:hover p {
         line-height: 1.4;
         padding-bottom: 4px; }
       .main .clinic-case .swiper-pagination .swiper-pagination-bullet-active {
-        color: #FFFFFF;
+        color: #192B39;
         font-weight: 500;
         background: transparent; }
     .main .clinic-case .nav-pills-custom .nav-link {
       color: #192B39;
       background: transparent;
       border: 1px solid #192B39;
-      position: relative; }
+      position: relative;
+      max-width: 100%; }
       .main .clinic-case .nav-pills-custom .nav-link .nav-pills-content {
         display: none; }
       .main .clinic-case .nav-pills-custom .nav-link .swiper-pagination-bullet {
         color: #192B39; }
     .main .clinic-case .nav-pills-custom .nav-link.active {
-      color: #FFFFFF;
+      color: #192B39;
       border: 1px solid #192B39;
-      background: #192B39; }
+      background: #FFFFFF; }
       .main .clinic-case .nav-pills-custom .nav-link.active .nav-pills-content {
         display: block; }
       .main .clinic-case .nav-pills-custom .nav-link.active .swiper-pagination {
@@ -20623,6 +20625,7 @@ figure.effect-goliath:hover p {
         flex-direction: column;
         justify-content: center; }
         .main .clinic-case .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet {
+          word-break: break-word;
           width: 100%;
           margin: 0;
           height: auto;
@@ -20632,11 +20635,11 @@ figure.effect-goliath:hover p {
           background: transparent;
           font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
           font-size: 18px;
-          color: #FFFFFF;
+          color: #192B39;
           line-height: 1.4;
           padding-bottom: 4px; }
         .main .clinic-case .nav-pills-custom .nav-link.active .swiper-pagination .swiper-pagination-bullet-active {
-          color: #FFFFFF;
+          color: #192B39;
           font-weight: 500;
           background: transparent; }
     @media (min-width: 992px) {
@@ -20786,7 +20789,8 @@ figure.effect-goliath:hover p {
       width: 600px;
       margin: 0 auto;
       display: block;
-      margin-top: 32px; }
+      margin-top: 32px;
+      margin-bottom: 32px; }
     .main .contact h3, .main .contact .h3 {
       font-family: "League Spartan", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       color: #688FA4;
