@@ -20556,6 +20556,9 @@ figure.effect-goliath:hover p {
       @media screen and (max-width: 767px) {
         .main .clinic-case .swiper {
           height: 250px; } }
+      @media screen and (max-width: 450px) {
+        .main .clinic-case .swiper {
+          height: 180px; } }
       .main .clinic-case .swiper .swiper-slide {
         text-align: center;
         font-size: 18px;
@@ -20563,31 +20566,39 @@ figure.effect-goliath:hover p {
         justify-content: center;
         align-items: center;
         position: relative; }
-        .main .clinic-case .swiper .swiper-slide .about-slider {
-          position: absolute;
-          bottom: 35px;
-          right: 0;
-          display: flex;
-          align-items: center;
+        .main .clinic-case .swiper .swiper-slide img {
+          display: block;
           width: 100%;
+          height: 100%;
+          object-fit: cover; }
+        .main .clinic-case .swiper .swiper-slide .about-slider {
+          right: 0;
+          width: 100%;
+          bottom: 35px;
+          display: flex;
+          position: absolute;
+          align-items: center;
           justify-content: flex-end; }
+          @media screen and (max-width: 450px) {
+            .main .clinic-case .swiper .swiper-slide .about-slider {
+              bottom: 0; } }
           .main .clinic-case .swiper .swiper-slide .about-slider p {
             font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: 24px;
             font-weight: 700;
             color: #FFFFFF;
             line-height: 1.4; }
+            @media screen and (max-width: 450px) {
+              .main .clinic-case .swiper .swiper-slide .about-slider p {
+                font-size: 16px;
+                margin-right: 16px;
+                margin-bottom: 8px; } }
           .main .clinic-case .swiper .swiper-slide .about-slider img {
             width: 65px;
             transform: rotate(270deg); }
             @media screen and (max-width: 767px) {
               .main .clinic-case .swiper .swiper-slide .about-slider img {
-                display: block; } }
-        .main .clinic-case .swiper .swiper-slide img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
+                display: none; } }
     .main .clinic-case .swiper-pagination {
       position: inherit;
       display: flex;
