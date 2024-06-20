@@ -20917,7 +20917,7 @@ figure.effect-goliath:hover p {
     .chat .chat-channel .chat-tooltip {
       opacity: 1; }
       .chat .chat-channel .chat-tooltip .on-hover-text {
-        background: #192B39;
+        background: #688FA4;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
         color: #FFFFFF;
         width: 205px;
@@ -20935,6 +20935,113 @@ figure.effect-goliath:hover p {
         top: 0;
         right: 0px; }
 
+#pestana {
+  position: fixed;
+  right: 0;
+  bottom: calc(50% - 150px);
+  z-index: 999;
+  min-width: 99px; }
+  #pestana .pestana_wrapper {
+    position: relative; }
+    #pestana .pestana_wrapper #pestana_top {
+      position: absolute;
+      width: 100%;
+      top: -50px;
+      left: 0;
+      text-align: center; }
+      #pestana .pestana_wrapper #pestana_top img {
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border: 3px solid #ABB1B8;
+        width: 99px;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5); }
+        #pestana .pestana_wrapper #pestana_top img.show {
+          cursor: pointer;
+          transition: all .2s ease-in-out; }
+          #pestana .pestana_wrapper #pestana_top img.show:hover {
+            border: 3px solid #192B39; }
+    #pestana .pestana_wrapper p {
+      font-weight: 700;
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height: 32px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+    #pestana .pestana_wrapper .close_popup {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+      color: #192B39; }
+      #pestana .pestana_wrapper .close_popup:hover {
+        color: #FFFFFF; }
+    #pestana .pestana_wrapper .cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      padding: 10px 16px;
+      font-size: 16px;
+      background-color: #192B39;
+      color: #FFFFFF;
+      border: 1.4px solid #192B39;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Montserrat", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px; }
+      #pestana .pestana_wrapper .cta:focus, #pestana .pestana_wrapper .cta:hover {
+        background-color: #FFFFFF;
+        color: #192B39;
+        text-decoration: none; }
+    #pestana .pestana_wrapper #pestana_bottom {
+      background-color: #ABB1B8;
+      padding: 55px 0 0;
+      text-align: center;
+      width: 160px;
+      box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+      display: none;
+      border-radius: 8px; }
+      #pestana .pestana_wrapper #pestana_bottom.active {
+        display: block; }
+
+@media (max-width: 992px) {
+  body {
+    margin-bottom: 80px; }
+
+  #pestana {
+    position: fixed;
+    right: 0;
+    top: inherit;
+    bottom: 0;
+    min-width: 100%;
+    width: 100%; }
+
+  #pestana_top {
+    display: none; }
+
+  #pestana_bottom {
+    background-color: #192B39;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5); }
+
+  .pestana_wrapper .cta {
+    width: 100%;
+    margin: 0;
+    background-color: #688FA4;
+    padding: 10px 5px; }
+
+  .close_popup {
+    display: none; } }
 .main, .single {
   min-height: 1700px; }
   .main .title-single, .single .title-single {
