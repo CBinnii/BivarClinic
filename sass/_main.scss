@@ -33,6 +33,14 @@
         &.terciary {
             color: $terciary;
         }
+
+        &.right {
+            text-align: right;
+
+            @media screen and (max-width: 991px) {
+                text-align: left;
+            }
+        }
     }
 
     .slider {
@@ -186,6 +194,10 @@
                     img {
                         width: 65px;
                         transform: rotate(270deg);
+
+                        @media screen and (max-width: 767px) {
+                            display: block;
+                        }
                     }
                 }
 

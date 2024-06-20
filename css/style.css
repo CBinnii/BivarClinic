@@ -20467,6 +20467,11 @@ figure.effect-goliath:hover p {
       color: #688FA4; }
     .main .title-section.terciary {
       color: #465D6C; }
+    .main .title-section.right {
+      text-align: right; }
+      @media screen and (max-width: 991px) {
+        .main .title-section.right {
+          text-align: left; } }
   .main .slider .banner {
     background-position: center;
     background-repeat: no-repeat;
@@ -20575,6 +20580,9 @@ figure.effect-goliath:hover p {
           .main .clinic-case .swiper .swiper-slide .about-slider img {
             width: 65px;
             transform: rotate(270deg); }
+            @media screen and (max-width: 767px) {
+              .main .clinic-case .swiper .swiper-slide .about-slider img {
+                display: block; } }
         .main .clinic-case .swiper .swiper-slide img {
           display: block;
           width: 100%;
@@ -20896,21 +20904,7 @@ figure.effect-goliath:hover p {
       position: relative;
       outline: 0; }
     .chat .chat-channel .chat-tooltip {
-      opacity: 0.4; }
-      .chat .chat-channel .chat-tooltip .chat-icon .chat-svg {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 54px;
-        height: 54px;
-        border-radius: 50%;
-        margin: 0;
-        cursor: pointer;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
-        background-color: #192B39; }
-        .chat .chat-channel .chat-tooltip .chat-icon .chat-svg img {
-          width: 39px;
-          height: 39px; }
+      opacity: 1; }
       .chat .chat-channel .chat-tooltip .on-hover-text {
         background: #192B39;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
@@ -20921,34 +20915,14 @@ figure.effect-goliath:hover p {
         font-weight: 700;
         font-size: 16px;
         line-height: 21px;
-        display: none;
-        position: relative; }
-        .chat .chat-channel .chat-tooltip .on-hover-text::before {
-          left: 100%;
-          top: 50%;
-          border: solid transparent;
-          content: "";
-          height: 0;
-          width: 0;
-          position: absolute;
-          pointer-events: none;
-          border-color: rgba(124, 216, 84, 0);
-          border-left-color: #192B39;
-          border-width: 5px;
-          margin-top: -5px; }
-      .chat .chat-channel .chat-tooltip:hover {
-        opacity: 1; }
-        .chat .chat-channel .chat-tooltip:hover .on-hover-text {
-          animation: ease-out forwards tooltips-horz;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: absolute;
-          top: 0;
-          right: 60px; }
-          .chat .chat-channel .chat-tooltip:hover .on-hover-text::before {
-            display: block;
-            content: ""; }
+        position: relative;
+        animation: ease-out forwards tooltips-horz;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0px; }
 
 .main, .single {
   min-height: 1700px; }
